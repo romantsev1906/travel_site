@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествие в Италию</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Блог о путешествиях</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="article.html">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Секция статьи -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4">Путешествие в Италию</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
+                    <img src="img/italy.jpg" class="card-img-top city-img" alt="Италия" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/italy.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Италия — страна, где каждый уголок пропитан историей, искусством и неповторимой атмосферой. В этом году мне посчастливилось побывать в трёх жемчужинах этой страны: Риме, Венеции и Флоренции. Готов поделиться впечатлениями, полезными советами и вдохновить вас на собственное путешествие!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Секция для городов -->
+        <div class="row">
+            <!-- Рим -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/rome.jpg" class="card-img-top city-img" alt="Рим" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/rome.jpg">
+                    <div class="card-body">
+                        <h3 class="card-title">Рим</h3>
+                        <p class="card-text"><strong>Что впечатлило:</strong></p>
+                        <ul>
+                            <li>Колизей и Римский форум — почувствовал дыхание античности. <strong>Совет:</strong> покупайте билеты онлайн, чтобы избежать очередей.</li>
+                            <li>Ватикан и Собор Святого Петра — масштабы и красота потрясают. Подъем на купол стоит усилий!</li>
+                            <li>Трастевере — очаровательный район с узкими улочками и лучшими тратториями.</li>
+                        </ul>
+                        <p><strong>Рекомендация:</strong> Попробуйте cacio e pepe и тирамису. Рим лучше исследовать пешком, но удобная обувь — must-have.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Венеция -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/venice.jpg" class="card-img-top city-img" alt="Венеция" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/venice.jpg">
+                    <div class="card-body">
+                        <h3 class="card-title">Венеция</h3>
+                        <p class="card-text"><strong>Что запомнилось:</strong></p>
+                        <ul>
+                            <li>Гранд-канал — прокатитесь на вапоретто на закате. Виды — как с открытки!</li>
+                            <li>Площадь Сан-Марко — утром здесь меньше туристов. Загляните в собор — мозаики завораживают.</li>
+                            <li>Остров Бурано — разноцветные домики и кружева ручной работы.</li>
+                        </ul>
+                        <p><strong>Совет:</strong> Избегайте ресторанов у главных достопримечательностей — они дорогие и не самые аутентичные.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Флоренция -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/florence.jpg" class="card-img-top city-img" alt="Флоренция" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/florence.jpg">
+                    <div class="card-body">
+                        <h3 class="card-title">Флоренция</h3>
+                        <p class="card-text"><strong>Что восхитило:</strong></p>
+                        <ul>
+                            <li>Галерея Уффици — «Рождение Венеры» Боттичелли стоит увидеть.</li>
+                            <li>Понте Веккьо — старинный мост с ювелирными лавками.</li>
+                            <li>Смотровая площадка у Пьяццале Микеланджело — панорама города на закате.</li>
+                        </ul>
+                        <p><strong>Совет:</strong> Закажите bistecca alla fiorentina — стейк на двоих, но оно того стоит!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Итоги и лайфхаки -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Итоги и лайфхаки</h3>
+                        <p><strong>Транспорт:</strong></p>
+                        <ul>
+                            <li>В Риме удобно метро, в Венеции — только вапоретто или пешком, во Флоренции всё рядом.</li>
+                            <li>Поезда между городами (Frecciarossa) быстрые и комфортные. Билеты бронируйте заранее!</li>
+                        </ul>
+                        <p><strong>Бюджет:</strong></p>
+                        <ul>
+                            <li>Обедайте в тратториях с меню дня (€10–15).</li>
+                            <li>Музеи часто бесплатны в первое воскресенье месяца.</li>
+                        </ul>
+                        <p><strong>Язык:</strong> Выучите базовые фразы на итальянском — locals это ценят!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заключение -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Заключение</h3>
+                        <p>Италия оставила в моём сердце теплоту и желание вернуться. Если вы мечтаете о путешествии, но откладываете — просто начните планировать! А если уже были, делитесь своими любимыми местами в комментариях.</p>
+                        <p><strong>Куда бы я отправился в следующий раз?</strong> Сицилия и Тоскана — в моём списке!</p>
+                        <p><strong>P.S.</strong> Не забудьте подписаться на обновления блога — впереди ещё много интересных маршрутов!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для галереи -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="modalImage" src="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> г.Волгодонск, Россия</p>
+                    <p><i class="fas fa-envelope"></i> gulievroman82@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Социальные сети</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Подписка</h5>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Ваш email">
+                        <button class="btn btn-primary" type="button">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const galleryModal = document.getElementById('galleryModal');
+        galleryModal.addEventListener('show.bs.modal', event => {
+            const img = event.relatedTarget;
+            const imgSrc = img.getAttribute('data-bs-img');
+            const modalImage = galleryModal.querySelector('#modalImage');
+            modalImage.src = imgSrc;
+        });
+    </script>
+</body>
+</html>

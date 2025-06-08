@@ -1,0 +1,118 @@
+/* Основные стили */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > * {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Стили для навигационной панели */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Стили для геройской секции */
+.hero-video {
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    padding: 50px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для карточек постов */
+.post-card {
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Стили для изображений */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для изображений городов */
+.city-img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.city-img:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для карточек */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Стили для подвала */
+footer {
+    background: linear-gradient(90deg, #1a1a1a, #343a40);
+}
+
+/* Стили для ссылок соцсетей */
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Стили для модального окна */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-body img {
+    border-radius: 8px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .hero-video iframe {
+        width: 100%;
+        height: auto;
+    }
+    .city-img {
+        max-height: 150px;
+    }
+    .card-title {
+        font-size: 1.25rem;
+    }
+}
